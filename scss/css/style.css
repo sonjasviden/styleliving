@@ -8,7 +8,62 @@ body {
   background-color: #F2ECE7;
 }
 
-.navbar {
+.navbar-mobile {
+  display: none;
+  overflow: hidden;
+}
+.navbar-mobile button {
+  background: transparent;
+  border: none;
+}
+.navbar-mobile .logo {
+  height: 3rem;
+}
+.navbar-mobile .hide {
+  display: none;
+}
+.navbar-mobile .show-menu-button img {
+  height: 3rem;
+  transition: 0.5s ease-in-out;
+  padding: 0;
+}
+.navbar-mobile .close-menu-button {
+  font-size: 2rem;
+}
+.navbar-mobile .menu-slide-out {
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  transition: 0.5s linear;
+}
+.navbar-mobile ul {
+  list-style-type: none;
+  padding: 0rem;
+}
+.navbar-mobile .menu-list li {
+  padding: 0.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.navbar-mobile .menu-slide-out p {
+  color: #1a1a1a;
+}
+.navbar-mobile .menu-slide-out h2 {
+  text-align: center;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  float: right;
+  padding: 15px;
+}
+
+.navbar-desktop {
   background-color: #F2ECE7;
   display: flex;
   padding: 10px;
@@ -19,40 +74,40 @@ body {
   top: 0;
   z-index: 1;
 }
-.navbar .logo {
+.navbar-desktop .logo {
   width: 30%;
   text-align: center;
 }
-.navbar .logo img {
+.navbar-desktop .logo img {
   width: 40%;
 }
-.navbar .menu-links {
+.navbar-desktop .menu-links {
   display: flex;
   list-style-type: none;
   align-items: center;
   width: 4 0%;
   justify-content: center;
 }
-.navbar .menu-links a {
+.navbar-desktop .menu-links a {
   font-family: "Futura";
   color: #57106C;
   text-decoration: none;
   padding: 10px;
   text-align: center;
 }
-.navbar .menu-links a:hover {
+.navbar-desktop .menu-links a:hover {
   color: rgba(87, 16, 108, 0.4784313725);
 }
-.navbar .menu-links a:focus {
+.navbar-desktop .menu-links a:focus {
   color: rgba(87, 16, 108, 0.4784313725);
 }
-.navbar .social-media {
+.navbar-desktop .social-media {
   display: flex;
   align-items: center;
   width: 30%;
   justify-content: center;
 }
-.navbar .social-media img {
+.navbar-desktop .social-media img {
   width: 80%;
   padding: 10px;
 }
@@ -95,6 +150,14 @@ body {
   text-align: center;
   padding-bottom: 20px;
 }
+.brands-box h2 {
+  align-items: center;
+  font-family: "Futura";
+  font-weight: 300;
+  text-align: center;
+  padding-top: 20px;
+  color: #57106C;
+}
 .brands-box a {
   color: #57106C;
   text-decoration: none;
@@ -105,12 +168,6 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-}
-.brands-box .brands h2 {
-  display: flex;
-  align-items: center;
-  font-family: "Futura";
-  font-weight: 300;
 }
 .brands-box .brands img {
   width: 10%;
@@ -292,4 +349,221 @@ footer .bottom p a {
 }
 .brands-container .grid-container .grid-item img {
   width: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+  * {
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  .navbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: #F2ECE7;
+    width: 100vw;
+    z-index: 1;
+    height: 10%;
+    align-items: center;
+    margin: 0;
+  }
+  .navbar-mobile .menu-list li {
+    padding: 10px;
+  }
+  .navbar-mobile .logo {
+    overflow-y: hidden;
+  }
+  .navbar-mobile .logo img {
+    height: 100%;
+    text-align: center;
+  }
+  .navbar-mobile .menu-slide-out {
+    width: 100%;
+    height: 50%;
+  }
+  .navbar-mobile .menu-slide-out a {
+    text-decoration: none;
+    font-family: "Futura";
+    font-weight: 300;
+  }
+  .navbar-mobile .close-menu-button {
+    font-size: 3rem;
+    color: #57106C;
+  }
+  .about {
+    width: 100vw;
+    display: block;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .about .about-text {
+    padding: 1rem;
+  }
+  .about .about-text h2 {
+    font-size: 2.5rem;
+  }
+  .about .about-img {
+    text-align: center;
+  }
+  .about .about-img img {
+    height: 100vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .ig-feed {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .brands-box .brands {
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .brands-box .brands img {
+    padding: 0;
+    width: 15%;
+  }
+  .contact {
+    display: block;
+  }
+  .contact .image {
+    display: none;
+  }
+  .contact .contact-form {
+    width: 100%;
+  }
+  footer {
+    padding: 20px;
+    padding-top: 5rem;
+  }
+  footer .social-media,
+  footer .location {
+    padding-right: 0rem;
+    padding: 10px;
+  }
+  footer .social-media h2,
+  footer .location h2 {
+    font-size: 15px;
+  }
+  footer .social-media p,
+  footer .location p {
+    font-size: 10px;
+  }
+  footer .info {
+    justify-content: space-between;
+  }
+  footer .info .logo {
+    width: 25%;
+  }
+  footer .info img {
+    width: 100%;
+    padding-top: 10px;
+  }
+  footer .bottom {
+    padding-top: 20px;
+  }
+  .navbar-desktop {
+    display: none;
+  }
+  .brands-container .grid-container .grid-item {
+    padding: 0px;
+  }
+  .heading-banner {
+    padding-top: 0;
+  }
+  .heading-banner p {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: #F2ECE7;
+    width: 100vw;
+    z-index: 1;
+    height: 10%;
+    align-items: center;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .navbar-mobile .show-menu-button img {
+    height: 5rem;
+  }
+  .navbar-mobile .menu-list li {
+    padding: 10px;
+  }
+  .navbar-mobile .logo {
+    overflow-y: hidden;
+    height: 7rem;
+  }
+  .navbar-mobile .logo img {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-mobile .menu-slide-out {
+    width: 100%;
+    height: 50%;
+  }
+  .navbar-mobile .menu-slide-out a {
+    text-decoration: none;
+    font-family: "Futura";
+    font-weight: 300;
+  }
+  .navbar-mobile .close-menu-button {
+    font-size: 3rem;
+    color: #57106C;
+  }
+  .about {
+    width: 100vw;
+    display: block;
+    padding: 0;
+    padding-bottom: 20px;
+    margin-top: 140px;
+  }
+  .about .about-text {
+    padding: 3rem;
+  }
+  .about .about-text h2 {
+    font-size: 2.5rem;
+  }
+  .about .about-img {
+    text-align: center;
+  }
+  .about .about-img img {
+    height: 100vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .ig-feed {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .brands-box .brands img {
+    width: 10%;
+    padding: 10px;
+  }
+  .contact {
+    justify-content: center;
+  }
+  .contact .contact-form {
+    width: 50%;
+  }
+  .contact .contact-form form {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  footer .bottom .arrow img {
+    width: 10%;
+    padding-bottom: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
