@@ -410,6 +410,7 @@ footer .bottom p a {
     height: 10%;
     align-items: center;
     margin: 0;
+    padding: 20px;
   }
   .navbar-mobile .menu-list li {
     padding: 10px;
