@@ -416,6 +416,8 @@ footer .bottom p a {
   }
   .navbar-mobile .logo {
     overflow-y: hidden;
+    height: 100%;
+    width: auto;
   }
   .navbar-mobile .logo img {
     height: 100%;
