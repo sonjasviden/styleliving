@@ -46,7 +46,7 @@ body {
 }
 .navbar-mobile .menu-list li {
   padding: 0.6rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Futura", sans-serif;
   font-weight: 600;
 }
 .navbar-mobile .menu-slide-out p {
@@ -85,7 +85,7 @@ body {
   display: flex;
   list-style-type: none;
   align-items: center;
-  width: 60%;
+  width: 40%;
   justify-content: center;
 }
 .navbar-desktop .menu-links a {
@@ -95,6 +95,8 @@ body {
   padding: 0px;
   text-align: center;
   width: 100%;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 .navbar-desktop .menu-links li {
   width: 100%;
