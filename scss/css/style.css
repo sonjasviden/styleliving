@@ -479,8 +479,7 @@ footer .bottom p a {
     width: 100%;
   }
   .contact .contact-form input[type=submit] {
-    width: 100%;
-    padding: 20px;
+    height: 100px;
   }
   footer {
     padding: 20px;
