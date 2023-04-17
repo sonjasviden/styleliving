@@ -479,13 +479,8 @@ footer .bottom p a {
     width: 100%;
   }
   .contact .contact-form input[type=submit] {
-    background-color: white;
-    color: black;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: "Futura";
+    width: 100%;
+    padding: 20px;
   }
   footer {
     padding: 20px;
