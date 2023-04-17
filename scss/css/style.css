@@ -8,6 +8,18 @@ body {
   background-color: #F2ECE7;
 }
 
+a {
+  color: #57106C;
+}
+
+a:hover {
+  color: rgba(87, 16, 108, 0.4784313725);
+}
+
+a:focus {
+  color: rgba(87, 16, 108, 0.4784313725);
+}
+
 .header {
   display: flex;
   height: 60vh;
