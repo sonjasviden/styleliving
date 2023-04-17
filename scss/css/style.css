@@ -394,7 +394,7 @@ footer .bottom p a {
   width: 50%;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   * {
     overflow: hidden;
     overflow-y: scroll;
@@ -443,6 +443,7 @@ footer .bottom p a {
   }
   .about .about-text {
     padding: 1rem;
+    margin-top: 60px;
   }
   .about .about-text h2 {
     font-size: 2.5rem;
