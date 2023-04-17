@@ -506,8 +506,6 @@ footer {
                 font-family: 'Futura';
                 font-weight: 300;
             }
-
-
         }
 
         .close-menu-button {
@@ -568,6 +566,16 @@ footer {
 
         .contact-form {
             width: 100%;
+
+            input[type=submit] {
+                background-color: white;
+                color: black;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-family: "Futura";
+            }
         }
     }
 
