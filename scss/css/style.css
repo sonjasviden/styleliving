@@ -416,10 +416,10 @@ footer .bottom p a {
   }
   .navbar-mobile .logo {
     overflow-y: hidden;
+    height: 100%;
   }
   .navbar-mobile .logo img {
     height: 100%;
-    width: 100%;
     text-align: center;
   }
   .navbar-mobile .menu-slide-out {
