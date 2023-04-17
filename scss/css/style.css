@@ -85,15 +85,19 @@ body {
   display: flex;
   list-style-type: none;
   align-items: center;
-  width: 4 0%;
+  width: 60%;
   justify-content: center;
 }
 .navbar-desktop .menu-links a {
   font-family: "Futura";
   color: #57106C;
   text-decoration: none;
-  padding: 10px;
+  padding: 0px;
   text-align: center;
+  width: 100%;
+}
+.navbar-desktop .menu-links li {
+  width: 100%;
 }
 .navbar-desktop .menu-links a:hover {
   color: rgba(87, 16, 108, 0.4784313725);
@@ -198,6 +202,7 @@ body {
   text-align: center;
   font-family: "Futura";
   font-weight: 300;
+  color: #57106C;
 }
 .contact .contact-form form {
   width: 80%;
@@ -495,14 +500,14 @@ footer .bottom p a {
     padding-bottom: 30px;
   }
   .navbar-mobile .show-menu-button img {
-    height: 5rem;
+    height: 3rem;
   }
   .navbar-mobile .menu-list li {
     padding: 10px;
   }
   .navbar-mobile .logo {
     overflow-y: hidden;
-    height: 7rem;
+    height: 4rem;
   }
   .navbar-mobile .logo img {
     height: 100%;

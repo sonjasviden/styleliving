@@ -99,15 +99,20 @@ body {
         display: flex;
         list-style-type: none;
         align-items: center;
-        width: 4 0%;
+        width: 60%;
         justify-content: center;
 
         a {
             font-family: 'Futura';
             color: #57106C;
             text-decoration: none;
-            padding: 10px;
+            padding: 0px;
             text-align: center;
+            width: 100%;
+        }
+
+        li {
+            width: 100%;
         }
     }
 
@@ -232,6 +237,7 @@ body {
             text-align: center;
             font-family: 'Futura';
             font-weight: 300;
+            color: #57106C;
         }
 
         form {
@@ -599,7 +605,7 @@ footer {
 
         .show-menu-button {
             img {
-                height: 5rem;
+                height: 3rem;
             }
         }
 
@@ -611,7 +617,7 @@ footer {
 
         .logo {
             overflow-y: hidden;
-            height: 7rem;
+            height: 4rem;
 
 
             img {
