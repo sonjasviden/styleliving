@@ -8,6 +8,19 @@ body {
   background-color: #F2ECE7;
 }
 
+.header {
+  display: flex;
+  height: 60vh;
+  margin-top: 100px;
+  justify-content: center;
+}
+.header .logotype {
+  width: 60%;
+}
+.header .logotype img {
+  width: 100%;
+}
+
 .navbar-mobile {
   display: none;
   overflow: hidden;
@@ -120,7 +133,6 @@ body {
 
 .about {
   display: flex;
-  margin-top: 100px;
   padding: 20px;
 }
 .about .about-text {
@@ -268,6 +280,12 @@ footer .media-location {
   display: flex;
   justify-content: center;
 }
+footer .media-location h2 {
+  font-family: "Futura";
+  color: #57106C;
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+}
 footer .social-media,
 footer .location {
   padding-right: 5rem;
@@ -299,7 +317,7 @@ footer .bottom {
 }
 footer .bottom .arrow {
   text-align: center;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 footer .bottom .arrow img {
   width: 8%;
@@ -389,6 +407,7 @@ footer .bottom p a {
   }
   .navbar-mobile .logo img {
     height: 100%;
+    width: 100%;
     text-align: center;
   }
   .navbar-mobile .menu-slide-out {
@@ -489,7 +508,7 @@ footer .bottom p a {
     width: 100%;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 830px) {
   .navbar-desktop {
     display: none;
   }
@@ -543,7 +562,7 @@ footer .bottom p a {
     margin-top: 140px;
   }
   .about .about-text {
-    padding: 3rem;
+    padding: 1.5rem;
   }
   .about .about-text h2 {
     font-size: 2.5rem;
@@ -562,18 +581,17 @@ footer .bottom p a {
     margin-right: auto;
   }
   .brands-box .brands img {
-    width: 10%;
-    padding: 10px;
+    width: 15%;
+    padding: 0px;
   }
   .contact {
-    justify-content: center;
+    display: block;
+  }
+  .contact .image {
+    display: none;
   }
   .contact .contact-form {
-    width: 50%;
-  }
-  .contact .contact-form form {
-    margin-right: auto;
-    margin-left: 0;
+    width: 100%;
   }
   footer .bottom .arrow img {
     width: 10%;
