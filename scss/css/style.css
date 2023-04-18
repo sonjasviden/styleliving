@@ -1,150 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400&display=swap");
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #F2ECE7;
 }
 
-a {
-  color: #57106C;
-}
-
-a:hover {
-  color: rgba(87, 16, 108, 0.4784313725);
-}
-
-a:focus {
-  color: rgba(87, 16, 108, 0.4784313725);
-}
-
-.header {
-  display: flex;
-  height: 60vh;
-  margin-top: 100px;
-  justify-content: center;
-}
-.header .logotype {
-  width: 60%;
-}
-.header .logotype img {
-  width: 100%;
-}
-
-.navbar-mobile {
-  display: none;
-  overflow: hidden;
-}
-.navbar-mobile button {
-  background: transparent;
-  border: none;
-}
-.navbar-mobile .logo {
-  height: 3rem;
-}
-.navbar-mobile .hide {
-  display: none;
-}
-.navbar-mobile .show-menu-button img {
-  height: 3rem;
-  transition: 0.5s ease-in-out;
-  padding: 0;
-}
-.navbar-mobile .close-menu-button {
-  font-size: 2rem;
-}
-.navbar-mobile .menu-slide-out {
-  position: fixed;
-  top: 0;
-  right: 0;
-  color: #1a1a1a;
-  background-color: #ffffff;
-  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
-  width: 50%;
-  transition: 0.5s linear;
-}
-.navbar-mobile ul {
-  list-style-type: none;
-  padding: 0rem;
-}
-.navbar-mobile .menu-list li {
-  padding: 0.6rem;
-  font-family: "Futura", sans-serif;
-  font-weight: 600;
-}
-.navbar-mobile .menu-slide-out p {
-  color: #1a1a1a;
-}
-.navbar-mobile .menu-slide-out h2 {
-  text-align: center;
-  color: #1a1a1a;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  float: right;
-  padding: 15px;
-}
-
-.navbar-desktop {
+.navbar {
   background-color: #F2ECE7;
-  display: flex;
-  padding: 10px;
-  justify-content: space-between;
   position: fixed;
-  overflow: hidden;
-  width: 100vw;
-  top: 0;
   z-index: 1;
+  top: 0;
+  width: 100vw;
 }
-.navbar-desktop .logo {
-  width: 30%;
-  text-align: center;
+.navbar a:hover {
+  color: rgba(87, 16, 108, 0.4784313725);
 }
-.navbar-desktop .logo img {
-  width: 40%;
+.navbar a:focus {
+  color: rgba(87, 16, 108, 0.4784313725);
 }
-.navbar-desktop .menu-links {
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-  width: 40%;
-  justify-content: center;
+.navbar a:active {
+  color: rgba(87, 16, 108, 0.4784313725);
 }
-.navbar-desktop .menu-links a {
-  font-family: "Futura";
+.navbar .nav-link {
   color: #57106C;
-  text-decoration: none;
-  padding: 0px;
-  text-align: center;
-  width: 100%;
-  text-transform: uppercase;
-  font-size: 12px;
+  font-family: "Futura";
 }
-.navbar-desktop .menu-links li {
+.navbar .nav-link.active {
+  color: #420056;
+}
+.navbar .container .logo {
   width: 100%;
 }
-.navbar-desktop .menu-links a:hover {
-  color: rgba(87, 16, 108, 0.4784313725);
-}
-.navbar-desktop .menu-links a:focus {
-  color: rgba(87, 16, 108, 0.4784313725);
-}
-.navbar-desktop .social-media {
-  display: flex;
-  align-items: center;
-  width: 30%;
-  justify-content: center;
-}
-.navbar-desktop .social-media img {
-  width: 80%;
-  padding: 10px;
+.navbar button {
+  border: none;
 }
 
 .about {
   display: flex;
+  margin-top: 100px;
   padding: 20px;
 }
 .about .about-text {
@@ -156,12 +47,12 @@ a:focus {
 }
 .about .about-text h2 {
   font-family: "Futura", sans-serif;
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 800;
 }
 .about .about-text h3 {
   font-family: "Futura";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-top: 1.5rem;
   font-weight: 500;
 }
@@ -325,7 +216,6 @@ footer .bottom {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 0 0 0;
 }
 footer .bottom .arrow {
   text-align: center;
@@ -351,6 +241,11 @@ footer .bottom p {
 }
 footer .bottom p a {
   text-decoration: none;
+  color: rgba(87, 16, 108, 0.6705882353);
+}
+footer .bottom p a:hover {
+  text-decoration: none;
+  color: rgba(87, 16, 108, 0.3490196078);
 }
 
 .heading-banner {
@@ -394,47 +289,50 @@ footer .bottom p a {
   width: 50%;
 }
 
-@media only screen and (max-width: 600px) {
-  * {
-    overflow: hidden;
-    overflow-y: scroll;
-  }
-  .navbar-mobile {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    background-color: #F2ECE7;
-    width: 100vw;
-    z-index: 1;
-    height: 12%;
-    align-items: center;
-    margin: 0;
-    padding: 15px;
-  }
-  .navbar-mobile .menu-list li {
-    padding: 10px;
-  }
-  .navbar-mobile .logo {
-    overflow-y: hidden;
-    height: 100%;
-  }
-  .navbar-mobile .logo img {
-    height: 100%;
+.heading-banner {
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #57106C;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.heading-banner h2 {
+  font-family: "Futura";
+  color: #57106C;
+  padding: 20px;
+}
+.heading-banner p {
+  font-family: "Nunito Sans";
+  font-weight: 300;
+  width: 50%;
+}
+
+.brands-container {
+  background-color: white;
+}
+.brands-container .grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  width: 100vw;
+}
+.brands-container .grid-container .grid-item {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brands-container .grid-container .grid-item img {
+  width: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar .navbar-collapse {
     text-align: center;
-  }
-  .navbar-mobile .menu-slide-out {
-    width: 100%;
-    height: 50%;
-  }
-  .navbar-mobile .menu-slide-out a {
-    text-decoration: none;
-    font-family: "Futura";
-    font-weight: 300;
-  }
-  .navbar-mobile .close-menu-button {
-    font-size: 3rem;
-    color: #57106C;
   }
   .about {
     width: 100vw;
@@ -512,8 +410,9 @@ footer .bottom p a {
   footer .bottom {
     padding-top: 20px;
   }
-  .navbar-desktop {
-    display: none;
+  footer .bottom .arrow img {
+    padding-bottom: 10px;
+    width: 10%;
   }
   .brands-container .grid-container .grid-item {
     padding: 0px;
