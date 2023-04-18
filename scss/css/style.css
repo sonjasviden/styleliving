@@ -364,6 +364,8 @@ footer .bottom p a:hover {
     height: 100vw;
     -o-object-fit: cover;
        object-fit: cover;
+    padding: 20px;
+    padding-top: 0;
   }
   .ig-feed {
     width: 90vw;
