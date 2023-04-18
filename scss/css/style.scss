@@ -5,6 +5,7 @@
 
 body {
     background-color: #F2ECE7;
+    padding-top: 58px;
 }
 
 .navbar {
@@ -27,7 +28,7 @@ body {
     }
 
     .nav-link {
-        color: #57106C;
+        color: rgb(87, 16, 108);
         font-family: 'Futura';
     }
 
@@ -42,18 +43,41 @@ body {
         }
     }
 
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(87, 16, 108)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+    }
+
+    .navbar-toggler {
+        border: none;
+        color: transparent;
+    }
+
     button {
         border: none;
     }
 
     a.navbar-brand {
-        width: 15%;
+        width: 12%;
+    }
+}
+
+.header-container {
+    background-color: transparent;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 50%;
+        height: auto;
     }
 }
 
 .about {
     display: flex;
-    margin-top: 100px;
     padding: 20px;
 
     .about-text {
@@ -419,7 +443,7 @@ footer {
             margin-top: 80px;
 
             h1 {
-                font-size: 2.1rem;
+                font-size: 1.5rem;
             }
         }
 

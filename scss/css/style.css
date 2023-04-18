@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400&display=swap");
 body {
   background-color: #F2ECE7;
+  padding-top: 58px;
 }
 
 .navbar {
@@ -20,7 +21,7 @@ body {
   color: rgba(87, 16, 108, 0.4784313725);
 }
 .navbar .nav-link {
-  color: #57106C;
+  color: rgb(87, 16, 108);
   font-family: "Futura";
 }
 .navbar .nav-link.active {
@@ -30,16 +31,35 @@ body {
   width: 100%;
   height: auto;
 }
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(87, 16, 108)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar .navbar-toggler {
+  border: none;
+  color: transparent;
+}
 .navbar button {
   border: none;
 }
 .navbar a.navbar-brand {
-  width: 15%;
+  width: 12%;
+}
+
+.header-container {
+  background-color: transparent;
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container img {
+  width: 50%;
+  height: auto;
 }
 
 .about {
   display: flex;
-  margin-top: 100px;
   padding: 20px;
 }
 .about .about-text {
@@ -355,7 +375,7 @@ footer .bottom p a:hover {
     margin-top: 80px;
   }
   .about .about-text h1 {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
   }
   .about .about-img {
     text-align: center;
