@@ -28,9 +28,13 @@ body {
 }
 .navbar .container .logo {
   width: 100%;
+  height: auto;
 }
 .navbar button {
   border: none;
+}
+.navbar a.navbar-brand {
+  width: 15%;
 }
 
 .about {
