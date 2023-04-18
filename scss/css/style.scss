@@ -79,6 +79,7 @@ body {
 .about {
     display: flex;
     padding: 20px;
+    margin-top: 10px;
 
     .about-text {
         display: flex;
@@ -422,6 +423,10 @@ footer {
 // MOBILE VIEW
 @media only screen and (max-width: 767px) {
 
+    * {
+        overflow-x: hidden;
+    }
+
     .navbar {
         .navbar-collapse {
             text-align: center;
@@ -429,6 +434,14 @@ footer {
 
         a.navbar-brand {
             width: 40%;
+        }
+    }
+
+    .header-container {
+        height: 100%;
+
+        img {
+            width: 80%;
         }
     }
 
@@ -440,10 +453,16 @@ footer {
 
         .about-text {
             padding: 1rem;
-            margin-top: 80px;
+            // margin-top: 80px;
 
             h1 {
                 font-size: 1.5rem;
+                overflow-y: hidden;
+
+            }
+
+            p {
+                overflow-y: hidden;
             }
         }
 
@@ -497,6 +516,10 @@ footer {
             input[type=submit] {
                 height: 50px;
             }
+
+            h2 {
+                overflow-y: hidden;
+            }
         }
     }
 
@@ -539,6 +562,10 @@ footer {
                 img {
                     padding-bottom: 10px;
                     width: 10%;
+                }
+
+                h3 {
+                    overflow-y: hidden;
                 }
             }
         }
