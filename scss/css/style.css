@@ -341,6 +341,9 @@ footer .bottom p a:hover {
   .navbar .navbar-collapse {
     text-align: center;
   }
+  .navbar a.navbar-brand {
+    width: 40%;
+  }
   .about {
     width: 100vw;
     display: block;

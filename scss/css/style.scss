@@ -398,8 +398,14 @@ footer {
 // MOBILE VIEW
 @media only screen and (max-width: 767px) {
 
-    .navbar .navbar-collapse {
-        text-align: center;
+    .navbar {
+        .navbar-collapse {
+            text-align: center;
+        }
+
+        a.navbar-brand {
+            width: 40%;
+        }
     }
 
     .about {
