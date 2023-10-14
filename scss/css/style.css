@@ -160,6 +160,15 @@ body {
   padding: 20px;
 }
 
+.instagram-feed {
+  text-align: center;
+}
+.instagram-feed .lightwidget-widget {
+  width: 90% !important;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .contact {
   display: flex;
   padding-top: 4rem;
