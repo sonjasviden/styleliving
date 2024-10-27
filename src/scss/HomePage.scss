@@ -13,6 +13,9 @@
 }
 
 .about {
+  * {
+    overflow-x: unset;
+  }
   display: flex;
   padding: 20px;
   margin-top: 10px;
@@ -98,6 +101,6 @@
     width: 90% !important;
     margin: 0 auto;
     text-align: center;
-    height: 600px;
+    height: 650px;
   }
 }

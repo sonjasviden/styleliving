@@ -33,6 +33,9 @@ body {
     width: 50%;
   }
 }
+* {
+  overflow-x: hidden;
+}
 
 .brands-container {
   background-color: white;
