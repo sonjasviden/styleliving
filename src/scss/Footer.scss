@@ -1,0 +1,182 @@
+.footer {
+  padding: 3rem;
+
+  .info {
+    display: flex;
+    justify-content: center;
+
+    .logo img {
+      width: 60%;
+    }
+
+    .media-location {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+
+      h2 {
+        font-family: "Futura";
+        color: #57106c;
+        font-size: 1.3rem;
+        padding-bottom: 0.5rem;
+      }
+
+      .social-media {
+        margin-right: 5rem;
+
+        .instagram {
+          margin-bottom: 16px;
+          display: flex;
+          align-items: center;
+
+          a {
+            color: #57106c;
+            text-decoration: none;
+            line-height: 2;
+            margin-left: 4px;
+          }
+        }
+
+        .facebook {
+          margin-bottom: 16px;
+          display: flex;
+          align-items: center;
+
+          a {
+            color: #57106c;
+            text-decoration: none;
+            line-height: 2;
+            margin-left: 4px;
+          }
+        }
+      }
+      .location {
+        padding-right: 5rem;
+
+        p {
+          font-family: "Nunito Sans";
+          font-weight: 300;
+        }
+        a {
+          color: #57106c;
+          text-decoration: none;
+          line-height: 2;
+        }
+      }
+      .openHours {
+        p {
+          font-family: "Nunito Sans";
+          font-weight: 300;
+        }
+        a {
+          color: #57106c;
+          text-decoration: none;
+          line-height: 2;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .arrow {
+      text-align: center;
+      padding-bottom: 3rem;
+
+      img {
+        width: 8%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      h3 {
+        font-family: "Futura";
+        color: #57106c;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-family: "Futura";
+      color: #57106c;
+      font-size: 0.6rem;
+
+      a {
+        text-decoration: none;
+        color: #57106cab;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: #57106c59;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    padding: 20px;
+    padding-top: 2rem;
+
+    .info {
+      display: block;
+
+      .logo {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        padding-top: 10px;
+      }
+
+      .media-location {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+        .social-media,
+        .location,
+        .openHours {
+          padding-right: 0rem;
+          padding: 10px;
+          margin-right: 1rem;
+
+          h2 {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      // padding-top: 20px;
+
+      .arrow {
+        padding-bottom: 1rem;
+
+        img {
+          padding-bottom: 10px;
+          width: 10%;
+        }
+      }
+    }
+  }
+}

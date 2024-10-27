@@ -1,0 +1,43 @@
+.thanks-main,
+.not-found-page {
+  margin-top: 82px;
+  height: 50vh;
+  border-bottom: 1px solid #420056;
+
+  .thanks,
+  .not-found {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-family: "Futura";
+      font-size: 40px;
+      padding-bottom: 20px;
+    }
+
+    h3 {
+      font-family: "Futura";
+    }
+  }
+
+  .back-btn {
+    z-index: 1;
+    text-align: center;
+
+    p svg {
+      margin-right: 1rem;
+    }
+
+    a {
+      font-family: "Futura", sans-serif;
+      color: #000000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline 1px;
+    }
+  }
+}

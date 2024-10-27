@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400&display=swap");
+@import "bootstrap/scss/bootstrap";
+
+@import "./Footer.scss";
+@import "./Navbar.scss";
+@import "./ThanksAndNotFound.scss";
+@import "./HomePage.scss";
+@import "./About.scss";
+
+body {
+  background-color: #f2ece7;
+  padding-top: 58px;
+}
+
+.heading-banner {
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #57106c;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    font-family: "Futura";
+    color: #57106c;
+    padding: 20px;
+  }
+
+  p {
+    font-family: "Nunito Sans";
+    font-weight: 300;
+    width: 50%;
+  }
+}
+
+.brands-container {
+  background-color: white;
+
+  .grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    width: 100vw;
+
+    .grid-item {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.heading-banner {
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #57106c;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    font-family: "Futura";
+    color: #57106c;
+    padding: 20px;
+  }
+
+  p {
+    font-family: "Nunito Sans";
+    font-weight: 300;
+    width: 50%;
+  }
+}
+
+.brands-container {
+  background-color: white;
+
+  .grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    width: 100vw;
+
+    .grid-item {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+// MOBILE VIEW
+@media only screen and (max-width: 429px) {
+  .instagram-feed {
+    .lightwidget-widget {
+      width: 100% !important;
+      height: 300px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .instagram-feed {
+    .lightwidget-widget {
+      width: 100% !important;
+      height: 400px;
+    }
+  }
+
+  .navbar {
+    .navbar-collapse {
+      text-align: center;
+    }
+
+    a.navbar-brand {
+      width: 40%;
+    }
+  }
+
+  .header-container {
+    height: 100%;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  .about {
+    width: 100vw;
+    display: block;
+    padding: 0;
+    padding-bottom: 20px;
+
+    .about-text {
+      padding: 1rem;
+      margin-top: 20px;
+
+      h1 {
+        font-size: 1.5rem;
+        overflow-y: hidden;
+      }
+
+      p {
+        overflow-y: hidden;
+      }
+    }
+
+    .about-img {
+      text-align: center;
+
+      img {
+        height: 100vw;
+        object-fit: cover;
+        padding: 20px;
+      }
+    }
+  }
+
+  .ig-feed {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .brands-box {
+    .brands {
+      justify-content: space-between;
+      padding: 10px 20px 10px 20px;
+      margin-top: 0px;
+
+      img {
+        padding: 0;
+        width: 15%;
+      }
+    }
+  }
+
+  .contact {
+    display: block;
+
+    .image {
+      text-align: center;
+      width: 100%;
+      padding-top: 20px;
+
+      img {
+        height: 100vw;
+        width: 100%;
+      }
+    }
+
+    .contact-form {
+      width: 100%;
+
+      input[type="submit"] {
+        height: 50px;
+      }
+
+      h2 {
+        overflow-y: hidden;
+      }
+    }
+  }
+
+  .brands-container {
+    .grid-container {
+      .grid-item {
+        padding: 0px;
+      }
+    }
+  }
+
+  .heading-banner {
+    padding-top: 0;
+    margin-top: 20px;
+
+    p {
+      width: 100%;
+    }
+  }
+}
