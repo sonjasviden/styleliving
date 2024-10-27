@@ -4,11 +4,11 @@ const InstagramFeed = () => {
   return (
     <div className="instagram-feed">
       <iframe
-        src="https://cdn.lightwidget.com/widgets/56d42277c80a581389f9a44ae2acc006.html"
+        src="//lightwidget.com/widgets/6df40ee3b5975e2a937227d09e54eeb3.html"
         allowTransparency
         className="lightwidget-widget"
-        style={{ width: "100%", border: 0, overflow: "hidden" }}
         title="Instagram Feed"
+        style={{ width: "90%" }}
       />
     </div>
   );

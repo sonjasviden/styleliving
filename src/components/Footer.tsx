@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
           <a href="#">
             <Image src="/images/arrow.png" alt="" />
           </a>
-          <h3>© 2023 Style & Living</h3>
+          <h3>© {new Date().getFullYear()} Style & Living</h3>
         </div>
         <p>
           Hemsida skapad av{" "}

@@ -101,6 +101,8 @@
     width: 90% !important;
     margin: 0 auto;
     text-align: center;
-    height: 650px;
+    border: 0;
+    overflow: hidden;
+    min-height: 100% !important;
   }
 }

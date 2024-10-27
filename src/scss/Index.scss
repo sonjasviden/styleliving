@@ -108,14 +108,6 @@ body {
 }
 
 // MOBILE VIEW
-@media only screen and (max-width: 429px) {
-  .instagram-feed {
-    .lightwidget-widget {
-      width: 100% !important;
-      height: 300px !important;
-    }
-  }
-}
 
 @media only screen and (max-width: 767px) {
   * {
@@ -125,7 +117,6 @@ body {
   .instagram-feed {
     .lightwidget-widget {
       width: 100% !important;
-      height: 400px;
     }
   }
 
